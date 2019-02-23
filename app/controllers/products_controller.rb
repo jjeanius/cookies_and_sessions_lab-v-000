@@ -7,8 +7,8 @@ class ProductsController < ApplicationController
   end
 
   def add
-      cart << params[:product]
-      session[:cart] = cart
+      @cart << params[:product]
+      session[:cart] = @cart
       binding.pry
   end
 
