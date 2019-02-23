@@ -1,0 +1,4 @@
+<% session[:cart] << @product %>
+<%= session[:cart].each do |product| %>
+"include" <%= product %>
+<% end %>
