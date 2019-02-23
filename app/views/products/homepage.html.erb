@@ -1,4 +1,4 @@
-<% session[:cart] << @product %>
-<%= session[:cart].each do |product| %>
-"include" <%= product %>
-<% end %>
+<%= form_for @cart do |f| %>
+  <%= f.label :cart %>
+  <%= f.text_field :product %><br>
+  <% end %>
