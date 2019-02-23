@@ -8,6 +8,7 @@ class ProductsController < ApplicationController
 
   def add
       cart << params[:product]
+      render_to index
   end
 
 end
