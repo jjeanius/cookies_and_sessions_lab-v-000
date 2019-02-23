@@ -6,7 +6,8 @@ class ProductsController < ApplicationController
   end
 
   def add
-      @cart << @product.id
+      @cart << params[@product].
+      
       session[:cart] = @cart
   end
 
