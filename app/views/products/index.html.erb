@@ -1,0 +1,8 @@
+
+<%= form_tag products_path, method: "Post" do %>
+  <label>  Product form </label> <br>
+
+  <label> <h1> Product Name: </h1> </label>
+    <%= text_field_tag :product %> <br>
+    <%= submit_tag "Submit" %>
+    <% end %>
